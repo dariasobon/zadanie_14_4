@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px auto;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h1 {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 20px 0 20px 150px;
+  background-color: #001a44;
+  color: white;
+  margin: 0;
+}
+
+.container .card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding-bottom: 30px;
+}
+
+.container .card .rightCard {
+  width: 60%;
+  padding: 0 20px;
+}
+
+.container .card .rightCard h2 {
+  text-transform: uppercase;
+  flex: 2;
+  margin: 0;
+  font: italic 300 38px/52px Lato;
+}
+
+.container .card .rightCard p {
+  font: 300 18px/32px Lato;
+}
+
+.container .card .rightCard ul {
+  padding: 0;
+  margin: 0;
+}
+
+.container .card .rightCard ul li {
+  list-style-type: none;
+}
+
+.container .card .rightCard .rightCard_more {
+  font: italic 300 18px/32px Lato;
+}
+
+.container .card .rightCard .rightCard_button a {
+  border: 1px solid #ffee35;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.8s;
+}
+
+.container .card .rightCard .rightCard_button a:hover {
+  background-color: #ffee35;
+  color: black;
+}
+
+.container img {
+  width: 200px;
+  height: 300px;
+  line-height: 0;
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 20px 0px;
+  }
+  .container .card .leftCard {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .container .card .rightCard {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container .card .rightCard .rightCard_button {
+    text-align: center;
+  }
+  .container .card .rightCard .rightCard_button a {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
