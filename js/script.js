@@ -30,24 +30,7 @@ var MovieTitle = React.createClass({
         title: React.PropTypes.string.isRequired
     },
     render: function() {
-        return (React.createElement('h2', {}, this.props.title)
-        );
-    }
-});
-
-
-var MovieDetails = React.createClass({
-    propTypes: {
-        movie: React.PropTypes.object.isRequired,
-    },
-    render: function() {
-        return (
-            React.createElement('div', { className: 'rightCard_more' },
-                React.createElement('ul', {},
-                    React.createElement('li', {}, this.props.movie.length)
-                )
-            )
-        );
+        return (React.createElement('h2', {}, this.props.title));
     }
 });
 
@@ -80,7 +63,7 @@ var MovieButton = React.createClass({
 });
 
 
-var leftCard = React.createClass({
+var LeftCard = React.createClass({
     propTypes: {
         image: React.PropTypes.string.isRequired,
     },
@@ -93,7 +76,7 @@ var leftCard = React.createClass({
     }
 });
 
-var rightCard = React.createClass({
+var RightCard = React.createClass({
     propTypes: {
         movie: React.PropTypes.object.isRequired,
     },
@@ -129,7 +112,7 @@ var Cards = movies.map(function(movie) {
 
 var element = React.createElement('section', {},
     React.createElement('div', { className: 'container' },
-    React.createElement('h1', {}, 'My favorite Films:'), Cards)
+        React.createElement('h1', {}, 'My favorite Films:'), Cards)
 );
 
 ReactDOM.render(element, document.getElementById('app'));
