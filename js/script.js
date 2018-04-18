@@ -99,8 +99,8 @@ var Movie = React.createClass({
     render: function() {
         return (
             React.createElement('div', { className: 'card' },
-                React.createElement(leftCard, { image: this.props.movie.imgSrc }, ''),
-                React.createElement(rightCard, { movie: this.props.movie }, '')
+                React.createElement(LeftCard, { image: this.props.movie.imgSrc }, ''),
+                React.createElement(RightCard, { movie: this.props.movie }, '')
             )
         );
     }
